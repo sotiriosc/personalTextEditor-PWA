@@ -239,6 +239,7 @@ pre {
     height: 40px; /* Set a fixed height */
     width: auto; /* Maintain the aspect ratio */
     flex-shrink: 0; /* Prevent the logo from shrinking */
+    margin-right: 30px;;
   }
 
   pre {
