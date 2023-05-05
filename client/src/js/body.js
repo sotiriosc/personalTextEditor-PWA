@@ -1,3 +1,5 @@
+// Construct a variable that can be exported that contains the body of the loading screen
+
 const body = 
 `/*
 

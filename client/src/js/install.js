@@ -1,7 +1,4 @@
-
-
 const butInstall = document.getElementById('buttonInstall');
-
 
 let deferredPrompt; // Declare a variable to store the beforeinstallprompt event
 
