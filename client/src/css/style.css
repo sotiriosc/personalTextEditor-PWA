@@ -223,8 +223,5 @@ pre {
   .image {
     max-height: 40% !important; 
   }
-  
-  main {
-    width: 200%;
-  }
+
 }
