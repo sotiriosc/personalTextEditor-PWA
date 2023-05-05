@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img src="./src/images/untitled.png" alt="website" width="200" height="200"> <./client/src/images/untitled.png></a>
+![Website Image:](client/src/images/Untitled.png)
 ### Motivation
 
 To learn the skills required to create an application that can be installed on desktops and mobile devices.
