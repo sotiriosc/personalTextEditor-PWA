@@ -228,7 +228,7 @@ pre {
     width: 100%;
     display: flex; /* Add display flex to nav */
     justify-content: space-between; /* Add space between elements in nav */
-    background-color: /* Add the desired background color for the header */;
+    
   }
 
   .navbar-brand {
