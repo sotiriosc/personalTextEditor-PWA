@@ -205,6 +205,8 @@ h1 {
   background-color: #31a9e1;
 }
 
+
+
 @media only screen and (max-width: 600px) {
   .nav-btn {
     display: none;
@@ -220,5 +222,14 @@ h1 {
 
   h1 {
     font-size: 18px;
+  }
+
+  pre {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  body {
+    overflow-x: scroll;
   }
 }
