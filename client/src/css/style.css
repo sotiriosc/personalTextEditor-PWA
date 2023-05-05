@@ -7,6 +7,9 @@
   --monoaki: #272822;
   --navbar-height: 50px;
 }
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -14,6 +17,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    height: 100%;
 }
 
 main {
@@ -34,7 +38,7 @@ h1 {
   font-size: 22px;
   font-weight: 550;
   letter-spacing: 0.9px;
-  height: 150px;
+  height: 250px;
   padding: 10px 20px;
 }
 
@@ -52,7 +56,6 @@ h1 {
   animation-iteration-count: infinite;
   animation-name: rotate-forever;
   animation-timing-function: linear;
-  height: 30px;
   width: 30px;
   border: 3px solid var(--primary);
   border-right-color: transparent;
@@ -63,7 +66,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - var(--navbar-height));
+  height: 100%
 }
 
 @keyframes rotate-forever {

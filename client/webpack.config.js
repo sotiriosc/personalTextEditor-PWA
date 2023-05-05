@@ -23,10 +23,25 @@ module.exports = () => {
       new MiniCssExtractPlugin(),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }), 
+      new WebpackPwaManifest({
+        name: 'Sotirios Personal Text Editor',
+        short_name: 'TXT Editor',
+        description: 'Mini Text Editor',
+        background_color: '#7eb4e2',
+        theme_color: '#7eb4e2',
+        start_url: './',
+        publicPath: './',
+        icons: [
+          {
+            src: path.resolve('./src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('images', 'icons'),
+          }
+        ]
+      }),
     ],
-
     module: {
       rules: [
         {

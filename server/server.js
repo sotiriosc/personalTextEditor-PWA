@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/src-sw.js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/service-worker.js'), (err) => { // make sure the path is correct
+    res.sendFile(path.join(__dirname, '../client/dist/src-sw.js'), (err) => { // make sure the path is correct
       if (err) {
         console.error('Error serving src-sw.js:', err);
         res.status(500).send('Error serving src-sw.js');
