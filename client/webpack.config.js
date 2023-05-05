@@ -14,16 +14,37 @@ module.exports = () => {
       install: './src/js/install.js'
     },
     output: {
-      filename: '[name].bundle.js',
+      filename: 'sotirios.bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Webpack Plugin',
+      }),
+      new MiniCssExtractPlugin(),
+      new InjectManifest({
+        swSrc: './src/sw.js',
+        swDest: 'service-worker.js',
+      }), 
     ],
 
     module: {
       rules: [
-        
+        {
+          test: /\.css$/i,
+          use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
+          },
+        },
       ],
     },
   };
