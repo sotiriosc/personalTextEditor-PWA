@@ -233,12 +233,12 @@ pre {
 
   .navbar-brand {
     display: flex; /* Add display flex to .navbar-brand */
-    flex-shrink: 1; /* Add flex-shrink to the logo */
   }
 
   .image {
-    max-height: 40% !important;
-    width: auto; /* Add this property to maintain the aspect ratio */
+    height: 40px; /* Set a fixed height */
+    width: auto; /* Maintain the aspect ratio */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
   }
 
   pre {
