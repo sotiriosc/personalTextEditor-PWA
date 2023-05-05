@@ -21,7 +21,6 @@ h1 {
 }
 
 #navbar {
-  height: var(--navbar-height);
   background-color: var(--primary);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -31,11 +30,18 @@ h1 {
   font-size: 22px;
   font-weight: 550;
   letter-spacing: 0.9px;
+  height: 150px;
+  padding: 10px 20px;
 }
 
-.navbar-brand img {
+.image {
   padding-top: 10px;
+  max-height: 60% !important; /* Decrease the max-height */
+  object-fit: contain;
+  margin-top: 5px;
 }
+
+
 
 .loading-spinner {
   animation-duration: 0.75s;
