@@ -13,14 +13,24 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
+// Add logic to a method that accepts some content and adds it to the database only if it doesn't exist
 export const putDb = async (content) => {
   const db = await initdb();
+
+  // Check if the content is already in the database
+  const existingContents = await getDb();
+  if (existingContents.some((item) => item.content === content)) {
+    console.log('Content already in the database. Skipping.');
+    return;
+  }
+
   const tx = db.transaction('sotirios', 'readwrite');
   const store = tx.objectStore('sotirios');
   await store.add({ content: content });
   await tx.done;
   console.log('Content added to the database');
 };
+
 
 // Add logic for a method that gets all the content from the database
 export const getDb = async () => {

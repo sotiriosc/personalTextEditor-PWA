@@ -16,6 +16,10 @@ body {
     sans-serif;
 }
 
+main {
+  height: 100%;
+}
+
 h1 {
   font-size: 22px;
 }
